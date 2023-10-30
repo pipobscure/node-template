@@ -1,0 +1,30 @@
+{
+	"name": "",
+	"version": "0.0.0",
+	"description": "",
+	"main": "dist/index.js",
+	"scripts": {
+		"test": "[ -d dist ] && node --test dist/**/*.test.js",
+		"format": "[ -f .prettierrc ] && [ -d src ] && prettier --write src/**/*.ts package.json tsconfig.json",
+		"lint": "[ -f .eslintrc.js ] && [ -d src ] && eslint --ext ts src",
+		"build": "[ -f tsconfig.json ]  && [ -d src ] && tsc --build",
+		"watch": "[ -f tsconfig.json ]  && [ -d src ] && tsc --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"keywords": [],
+	"contributors": [],
+	"license": "UNLICENSED",
+	"devDependencies": {
+		"@types/node": "^20.8.9",
+		"prettier": "^3.0.3",
+		"typescript": "^5.2.2",
+		"eslint": "^8.38.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-import": "^2.28.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"@typescript-eslint/parser": "^5.59.0"
+	}
+}
