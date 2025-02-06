@@ -1,11 +1,8 @@
 .vscode/
 node_modules/
 dist/
-trace/
 temp/
 *.tsbuildinfo
 .npm
-.eslintcache
 
 *.log
-logging.json
